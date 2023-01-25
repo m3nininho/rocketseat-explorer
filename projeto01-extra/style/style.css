@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#img1 {
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+
+  text-align: center;
+}
+main {
+  width: 540px;
+  margin: 0 auto;
+}
+main h1 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: "Dosis", sans-serif;
+  color: #3f3d56;
+}
+#destiny {
+  color: #ee24ff;
+  font-weight: bold;
+}
+main p {
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #828282;
+}
+.details {
+  font-weight: bold;
+  color: #3f3d56;
+}
+#float {
+  font-weight: bold;
+}
+#line {
+  width: 391px;
+  height: 0px;
+  border: 1px solid #eceff2;
+  margin: 0 auto 16px;
+}
+footer {
+  margin-top: 64px;
+}
+footer a {
+  color: #3f3d56;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+}
+footer a + a {
+  margin-left: 42px;
+}
+.wave {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1024px;
+}
+.wave img {
+  position: fixed;
+  right: 280px;
+}
