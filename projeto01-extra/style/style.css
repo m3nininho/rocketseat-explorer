@@ -59,12 +59,8 @@ footer a {
 footer a + a {
   margin-left: 42px;
 }
-.wave {
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 1024px;
-}
 .wave img {
-  position: fixed;
-  right: 280px;
+  width: 100vw;
+  margin-top: 40px;
+  display: block;
 }
