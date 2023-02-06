@@ -1,4 +1,4 @@
-<h1 align="center"> Crie seu evento </h1>
+<h1 align="center"> Responsividade </h1>
 
 <br>
 
