@@ -75,6 +75,9 @@ main p {
 .ice-cream {
   position: relative;
 }
+.ice-cream:hover {
+  transform: scale(1.1);
+}
 .ice-cream div {
   position: absolute;
   top: 1.6rem;
