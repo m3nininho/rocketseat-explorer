@@ -7,6 +7,9 @@
   --fs-title: "Staatliches", cursive;
   --fs-texting: "Palanquin", sans-serif;
 
+  --fs-texting-web: "Roboto", sans-serif;
+  --fs-footer-web: "Open Sans", sans-serif;
+
   --bg-header: hsla(218, 17%, 62%, 1);
   --bg-titleHeader: hsla(275, 18%, 79%, 1);
   --bg-spanCard: hsla(312, 91%, 96%, 1);
@@ -31,6 +34,9 @@ header {
 
   background-color: var(--bg-header);
   animation: downtop 700ms 350ms backwards;
+}
+header p {
+  display: none;
 }
 header span {
   background-color: var(--bg-titleHeader);
@@ -58,7 +64,7 @@ main {
   animation: topdown 700ms 350ms backwards;
 }
 
-main p {
+p {
   margin-top: 1.4rem;
 
   font-family: var(--fs-texting);
@@ -99,6 +105,9 @@ main p {
   font-weight: 400;
   line-height: 3.4rem;
 }
+.contact {
+  display: none;
+}
 @keyframes topdown {
   0% {
     opacity: 0;
@@ -117,5 +126,91 @@ main p {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (min-width: 768px) {
+  .page {
+    width: 70rem;
+  }
+  main {
+    width: 70rem;
+    margin: 0 auto;
+  }
+  main p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .ice-cream-box {
+    grid-template-areas:
+      "A B"
+      "C D";
+  }
+  .ice-cream img {
+    width: 30rem;
+  }
+  .ice-cream div {
+    left: 12px;
+  }
+  .ice-cream:nth-child(1) {
+    grid-area: A;
+  }
+  .ice-cream:nth-child(3) {
+    grid-area: B;
+  }
+}
+@media (min-width: 1024px) {
+  .page {
+    width: 120rem;
+    display: flex;
+  }
+  header {
+    width: 37.7rem;
+    height: 105vh;
+  }
+  header p {
+    display: block;
+    width: 27.5rem;
+    height: 26.2rem;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-family: var(--fs-texting-web);
+    color: var(--fc-title);
+  }
+  main {
+    width: 120rem;
+    margin-left: 0;
+    height: fit-content;
+  }
+  main p {
+    display: none;
+  }
+  .ice-cream-box {
+    grid-template-areas:
+      "A B C"
+      "D F E"
+      "D F E";
+  }
+  .ice-cream {
+    height: fit-content;
+  }
+  .ice-cream:nth-child(1) {
+    grid-area: A;
+  }
+  .ice-cream:nth-child(2) {
+    grid-area: B;
+  }
+  .ice-cream:nth-child(3) {
+    grid-area: F;
+  }
+
+  .ice-cream:nth-child(5) {
+    grid-area: C;
+  }
+  .contact {
+    display: block;
+    text-align: center;
+    color: var(--fc-titleCard);
+    font-size: 1.4rem;
+    line-height: 2.8rem;
   }
 }
