@@ -97,10 +97,9 @@ button:hover {
   animation: shake 0.06s ease-in-out infinite alternate-reverse;
 }
 .luckyBox {
-  animation: toAppear 1500ms both;
+  animation: toAppear 0.7s ease-in;
 }
-.luckyBox p {
-}
+
 @keyframes shake {
   from {
     transform: rotate(0.006turn);
@@ -111,11 +110,16 @@ button:hover {
   }
 }
 @keyframes toAppear {
-  from {
+  0% {
     transform: translateY(200px);
     scale: 0.1;
+    position: relative;
+    bottom: -120px;
   }
-  to {
+  100% {
+    position: relative;
+
+    bottom: -60px;
     transform: translateY(10px);
     scale: 1;
   }
