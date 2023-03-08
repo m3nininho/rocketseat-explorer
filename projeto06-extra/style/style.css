@@ -86,4 +86,37 @@ button {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 2rem;
+
+  cursor: pointer;
+}
+button:hover {
+  background: #f99100c0;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+}
+.fortune-cookie:hover {
+  animation: shake 0.06s ease-in-out infinite alternate-reverse;
+}
+.luckyBox {
+  animation: toAppear 1500ms both;
+}
+.luckyBox p {
+}
+@keyframes shake {
+  from {
+    transform: rotate(0.006turn);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes toAppear {
+  from {
+    transform: translateY(200px);
+    scale: 0.1;
+  }
+  to {
+    transform: translateY(10px);
+    scale: 1;
+  }
 }

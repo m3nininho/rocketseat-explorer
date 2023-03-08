@@ -25,8 +25,9 @@
       <div id="closed-box">
         <h1>Qual é a sua sorte de hoje?</h1>
         <p>Abra o biscoito e descubra!</p>
-        <a href="#">
+        <a href="#" id="handleClosedClick">
           <img
+            class="fortune-cookie"
             src="./assets/fortune-cookie.jpg"
             alt="Desenho de um biscoito que contém dentro dele um pedaço de papel com uma 'sorte', geralmente um aforismo ou uma profecia vaga"
           />
@@ -34,17 +35,16 @@
       </div>
       <div id="open-box" class="open-box hide">
         <h1 class="title-open">Aqui está a sua sorte de hoje:</h1>
-        <div class="luckyBox">
-          <p id="luckyMessage">
-            Se alguém está tão cansado que não possa te dar um sorriso,
-            deixa-lhe o teu.
-          </p>
+        <div>
+          <div class="luckyBox">
+            <p id="luckyMessage"></p>
+          </div>
         </div>
         <img
           src="./assets/opened-cookie.jpg"
           alt="Desenho do biscoito da sorte aberto com a 'sorte' escrito em cima"
         />
-        <button>Abrir outro biscoito</button>
+        <button id="btnReset">Abrir outro biscoito</button>
       </div>
     </main>
     <script src="./js/main.js"></script>
